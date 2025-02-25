@@ -21,3 +21,7 @@ class Animal:
 
     def type (self):
         print(f"{self.__name} is a {self.__type}")
+    
+    # describing the animal by providing the species 
+    def describe(self, species):
+        print(f"I am a {species} and my name is {self.__name}.") 
