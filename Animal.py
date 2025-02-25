@@ -1,6 +1,9 @@
 class Animal:
-    def __init__(self, name, type, sound, age, play):
-        self.__name = name 
+
+    def __init__(self, name, animal, color): 
+        self.__name = name
+        self.__animal = animal
+        self.color = color
         print("hello, I am", self.__name)
         self.__type= type
         self.__sound= sound
@@ -9,6 +12,15 @@ class Animal:
 
     def talk(self):
         print("hi")
+
+    def animal_type(self, animal):  
+        print (f"I am a {animal}")
+    
+
+    def animal_color(self, color):
+        print (f"Animal color:{color}")
+
+
 
     def play (self):
         print(f"{self.__name} plays {self.__play} for hours!")
