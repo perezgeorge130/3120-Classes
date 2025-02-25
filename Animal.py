@@ -5,4 +5,7 @@ class Animal:
 
     def talk(self):
         print("hi")
-
+    
+    # describing the animal by providing the species 
+    def describe(self, species):
+        print(f"I am a {species} and my name is {self.__name}.") 
